@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+        
+    <div class="form-container">
+
+
+        <form>
+            <fieldset>
+                <legend>
+                    <div class="form-div">
+                        <div class="img-div"> <img src="pic.jpg" alt=""></div>
+                        <div style="display: flex; width:100%"> <br>
+                            <div style="width: 50%;">
+                                <label class="name" for="name">First Name</label> <br>
+                                <input type="text" id="fname" placeholder="Enter your first name" required>                
+                            </div>
+                            <div style="width: 50%;">
+                                 <label class="name" for="name">Last Name</label> <br>
+                                <input type="text" id="lname" placeholder="Enter your last name">
+                        
+                            </div>
+                           </div>
+                        <div  style="display: flex; width:100%">
+                            <div style="width: 50%;"> <br>
+                                <label class="e-mail" for="email">E-mail</label> <br>
+                                <input type="email" id="email" placeholder="Enter your Email" required>
+                            </div>
+                            <div style="width: 50%;"> <br>
+                                <label class="phone" for="number">Phone Number</label> <br>
+                                <input type="number" id="number" placeholder="Enter your Phone Number" required>
+                            </div>
+                        </div>
+                        <div> <br>
+                            <label class="amount" for="amount">Donation Amount</label> <br>
+                            <input type="number" placeholder="500,1000,custom..">
+                        </div>
+                        <div> <br>
+                            <label class="pay-method" for="pay-method">Payment Method</label> <br>
+                            <label><input type="radio" name="pay-method" value="UPI">UPI</label>
+                            <label><input type="radio" name="pay-method" value="Credit Card">Credit Card</label>
+                            <label><input type="radio" name="pay-method" value="Debit Card">Debit Card</label>
+                            <label><input type="radio" name="pay-method" value="Bank Transfer">Bank Transfer</label>
+                        </div>
+                        
+                        <div> <br>
+                            <label class="msg" for="msg">Leave a Message</label> <br>
+                            <label><input type="text" id="msg" placeholder="For Education, For Healthcare etc..."></label>
+                        </div>
+                        <div> <br>
+                            <label><input type="checkbox" id="t&c" name="checkbox" value="t&c" required>I agree to the privacy policy & terms. (required)</label>
+                        </div>
+                        <br>
+                        <input type="submit" value="send" id="button">
+                    </div>
+                </legend>
+            </fieldset>
+        </form>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</body>
+
+</html>
